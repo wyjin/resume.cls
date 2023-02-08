@@ -1,10 +1,11 @@
-% minimum resume/cv document class used by wyjin.
+% minimal resume/cv document class used by wyjin.
 % references: section 3 used code from
 %   https://tex.stackexchange.com/questions/93908/macro-for-declaring-variables-in-class-files
 
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{resume}[2023/02/07 resume/cv document class]
 \LoadClass{article}
+
 
 % 0. paper options
 \DeclareOption{letterpaper}{
@@ -99,6 +100,7 @@
 \RequirePackage{parskip}
 \setlength{\parskip}{0.3em}
 
+
 % 6. list styles
 \newenvironment{cvlist}
 {
@@ -117,7 +119,6 @@
   {#5} \hfill {#6}
 
 }{}  
-
 %   7.2 cventry: environment for resume content, with a bullet list
 \newenvironment{cventry}[4]{
     { \bf #1}\hfill{#2}%

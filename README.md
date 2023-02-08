@@ -1,1 +1,1 @@
-A minimalist resume/cv document class in LaTeX.
+A minimal resume/cv document class in LaTeX.
